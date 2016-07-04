@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">MusicalStructure</string>
+    <string name="activity_main_label">Music Library</string>
+    <string name="activity_details_label">Details</string>
+    <string name="activity_nowplaying_label">Music Player</string>
+
+    <string name="library_playlists">Playlists</string>
+    <string name="library_albums">Albums</string>
+    <string name="library_artists">Artists</string>
+    <string name="library_songs">Songs</string>
+    <string name="now_playing">Shows currently playing song and on click will take user to music player</string>
+    <!--Label card view headings-->
+    <string name="description">Description</string>
+    <string name="hurdles">Technical Hurdles</string>
+    <string name="solution">Solution</string>
+
+    <!-- text for artists card view -->
+    <string name="description_artists">Songs can be categorized by artists and shown as grid view. User can select an artist to view related list of songs to play</string>
+    <string name="hurdles_artists">Songs in a user device need to be scanned and categorized by artists</string>
+    <string name="solution_artists">Background threads or service can be used to scan the audio files in the storage device. This process should not affect the performance of Main UI Thread. </string>
+    <string name="button_one_artists">Open Artist</string>
+
+    <!-- text for albums card view -->
+    <string name="description_albums">Songs can be categorized as albums and shown in a grid view. User can select album to view list of songs to play.</string>
+    <string name="hurdles_albums">Songs in a user device need to be scanned and categorized as albums</string>
+    <string name="solution_albums">Background threads or service can be used to scan the audio files in the storage device. This process should not affect the performance of Main UI Thread.</string>
+    <string name="button_one_album">Open Album</string>
+
+    <!-- text for playlist card view -->
+    <string name="description_playlist">Songs can be categorized in playlist and shown as grid view. User can create or modify playlist by adding favorite songs</string>
+    <string name="hurdles_playlist">Playlist information needs to be saved in order to access it later</string>
+    <string name="solution_playlist">We can use SQLite db for the storing information</string>
+    <string name="button_one_playlist">Open Playlist</string>
+
+    <!-- text for songs card view -->
+    <string name="description_song">All songs will be shown here as list view. User can select any song to play or to be added in current queue</string>
+    <string name="hurdles_song">Songs available in a user device need to be scanned. We also need to manage current queue</string>
+    <string name="solution_song">Use can use background asynchronous threads to scan songs in the device storage and use SQLite db for maintaining queue</string>
+    <string name="button_one_song">Play</string>
+
+    <!-- text for details activity card view -->
+    <string name="description_details">Detailed list of songs related to a album, artist or playlist will be shown here as list view. User can select any song to play or to be added in current queue</string>
+    <string name="hurdles_details">List view needs to be populated using stored association between song and entity</string>
+    <string name="solution_details">Use SQLite db or Content Provider to store and retrieve the list</string>
+    <string name="button_one_details">Play</string>
+
+    <!-- text for music player activity card view -->
+    <string name="description_player">Show details of currently playing song along with full controls such as next, last, play, pause and stop</string>
+    <string name="hurdles_player">Maintaining state of music player and audio focus</string>
+    <string name="solution_player">Configure MediaPlayer and AudioManager modules</string>
+    <string name="button_one_player">Add song to playlist</string>
+
+</resources>
